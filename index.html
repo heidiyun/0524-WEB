@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- link 외부 참조 및 브라우저 셋팅, androidmanifest-->
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="title">
+        I love Color
+      </div>
+      <div class="description">Lorem ipsum ....</div>
+    </div>
+
+    <div class="cards">
+      <div class="card" type="blue"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+    <div class="sub"></div>
+    <style>
+      * {
+        box-sizing: border-box;
+        /* height + padding */
+      }
+
+      body {
+        /*view height : 보고있는 화면의 세로크기가 100vh */
+        /* height : 100vh; */
+        margin: 0;
+        /* top - right - bottom - left */
+      }
+      .main {
+        background: #ff0000;
+        height: 500px;
+        text-align: center;
+        /* 컨텐츠 */
+        /*  */
+
+        padding-top: 100px;
+      }
+
+      .main .title {
+        font-size: 100px;
+      }
+
+      .main .description {
+        font-size: 50px;
+      }
+
+      .sub {
+        height: 400px;
+        background: #eee;
+      }
+      .cards {
+        height: 300px;
+        background: rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 350px;
+        /* absolute는 width 지정해줘야함. */
+        z-index: 1;
+        width: 100%;
+
+        display: flex;
+
+        /*  자식을 안에 공간이 다 차기 전까지 가로로 */
+        justify-content: center;
+        /* 가로 가운데 정렬 */
+        align-items: center;
+        /* 세로 */
+      }
+
+      .cards .card:hover {
+        background: #000;
+        cursor: pointer;
+        width: 250px;
+        border-radius: 50%;
+      }
+
+      .cards > .card[type="blue"] {
+        background: #00f;
+      }
+
+      /* .card .name */
+      .cards > .card {
+        height: 100%;
+        width: 350px;
+        background: #333333;
+        margin: 0 12px;
+
+        transition: background-color 1s, width 1s, border-radius 1s;
+      }
+
+      /* <div class="card name"></div   .card.name   */
+    </style>
+
+    <!--화면에 표시될 내용-->
+    <!--
+        <p>
+            안녕하세요
+        </p>
+
+        <div>
+
+        </div>
+
+        <h1>
+
+        </h1>
+
+        <h2 class = "a" style="font-size:50px;">
+                안녕ㅎㅎㅎ
+        </h2>
+
+        <h3>
+
+        </h3>
+
+        <style>
+            h2.a {
+                font-size: 15px;
+                font-weight:100;
+                color : #ffffff;
+                background : #000000;
+
+                border : solid 10px #ff0000 !important;
+            
+                border-width: 10px;
+                border-color : #ff0000;
+                border-style: solid;
+                
+            }
+        </style>
+        <a href="https://www.naver.com">NAVER LINK</a>
+-->
+  </body>
+</html>
+
+<!--
+    <[TAG]>
+    <div 구역>
+    
+    <[TAG] [ATTR]=[VALUE]></[TAG]>
+
+        style에서 class는 .로 시작한다.
+        아무것도 안붙으면 tag
+
+        /* display, position, flex */
+-->

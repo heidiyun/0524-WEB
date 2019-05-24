@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </header>
+  <body>
+    <div class="border">
+      <div class="menu">
+        <div class="title">SOTFGRAY</div>
+        <div style="flex:1;"></div>
+        <div style="position: relative; margin-right: 20px">PRODUCTS</div>
+        <div style="position: relative; margin-right: 20px">SERVICES</div>
+        <div style="position: relative; margin-right: 20px">ABOUT</div>
+        <div style="position: relative; margin-right: 20px">JOBS</div>
+        <div style="position: relative; margin-right: 20px">CONTACT</div>
+        <div style="position: relative; margin-right: 30px; font-weight: bold">
+          +81-00-0000-0000
+        </div>
+      </div>
+      <div class="main">
+        <p class="sentence main-text">
+          Creative Solutions
+        </p>
+        <div class="sentence">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+          <br />
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s,
+          <br />
+          when an unknown printer took a galley of type and scrambled it to make
+          a type specimen book.
+          <br />
+          It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.
+          <br />
+          It was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages
+        </div>
+      </div>
+      <div class="sub-main">
+        <div class="category">
+          <div class="icon">
+            <i class="material-icons">
+              chat_bubble_outline
+            </i>
+          </div>
+          <p style="color:#0099ff; font-size : larger; font-weight:bold; ">
+            Consulting
+          </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+
+        <div class="category">
+          <div class="icon">
+            <i class="material-icons">
+              sentiment_satisfied_alt
+            </i>
+          </div>
+          <p style="color:#0099ff; font-size : larger; font-weight:bold; ">
+            Developing
+          </p>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </p>
+        </div>
+
+        <div class="category">
+          <div class="icon">
+            <i class="material-icons">
+              music_note
+            </i>
+          </div>
+          <p style="color:#0099ff; font-size : larger; font-weight:bold; ">
+            Designing
+          </p>
+          <p>
+            It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum.
+          </p>
+        </div>
+
+        <div class="category">
+          <div class="icon">
+            <i class="material-icons">
+              restaurant
+            </i>
+          </div>
+          <p style="color:#0099ff; font-size : larger; font-weight:bold; ">
+            Analysis
+          </p>
+          <p>
+            Many desktop publishing packages and web page editors now use Lorem
+            Ipsum as their default model text, and a search for 'lorem ipsum'
+            will uncover many web sites still in their infancy. Various versions
+            have evolved over the years, sometimes by accident, sometimes on
+            purpose (injected humour and the like).
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      background: #333333;
+    }
+
+    .border .menu .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 100px;
+    }
+
+    .border .menu .menu_item {
+      font-size: 15px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 20%;
+      margin-right: 5%;
+    }
+
+    .border {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      margin: auto;
+    }
+
+    .menu {
+      background: #fefefe;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main {
+      width: 100%;
+      height: 400px;
+      background-image: url("https://cdn.pixabay.com/photo/2015/06/24/15/45/laptop-820274__480.jpg");
+      background-size: cover;
+      background-position: center;
+      /* background-size: 100% 400px; */
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 40px;
+    }
+
+    .main .main_sentence {
+      font-weight: bold;
+      font-size: 50px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+    }
+
+    .main .sentence {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      max-width: 760px;
+      margin: auto;
+    }
+    .main .sentence.main-text {
+      font-size: 30px;
+    }
+    .sub-main {
+      height: 450px;
+      background: #eeeeee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sub-main .category {
+      margin: 10px;
+      width: 20%;
+      height: 80%;
+    }
+
+    .sub-main .category .icon {
+      color: white;
+      font-size: 30px;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      background: #0099ff;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .sub-main .category .icon i.material-icons {
+      font-size: inherit;
+    }
+  </style>
+</html>
